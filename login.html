@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./loginpage.css">
+    <style>
+        h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="loginContainer">
+        <h1>Welcome to COVILLA</h1>
+        <form action="index.html">
+            <h2>Login</h2>
+            <label for="email"></label>
+            <input type="email" 
+                    name="email" 
+                    placeholder="Email" 
+                    required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                    title="Enter a valid email"
+            >
+
+            <label for="password"></label>
+            <input type="password" 
+                    name="password" 
+                    placeholder="Password"
+                    required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            >
+
+            <input type="submit" value="Login">
+            <p>Don't have an account? <a href="signup.html" style="color: #007BFF; text-decoration: none; font-weight: bold;" >Sign up</a></p>
+
+            
+
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>
+<script src="./loginvalidation.js"></script>
